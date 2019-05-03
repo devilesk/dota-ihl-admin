@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img width="75" src="https://github.com/devilesk/dota-ihl-bot/blob/master/assets/img/logo.png?raw=true">
+    <br>
+    dota-ihl-admin
+</h1>
+<h4 align="center">Admin dashboard for <a href="https://github.com/devilesk/dota-ihl-dota">dota-ihl-bot</a>.</h4>
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This project is built on top of [react-admin](https://github.com/marmelab/react-admin) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It requires a running [PostgREST](https://github.com/PostgREST/postgrest) server to provide the REST api and [dota-ihl-auth-server](https://github.com/devilesk/dota-ihl-auth-server) to provide the Steam sign on and generate JWT tokens used to authenticate api requests.
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Node.js](https://nodejs.org/en/download/) 10+ (Tested with 10.9.0)
+* [PostgreSQL](https://www.postgresql.org/download/) 9.5+ (Tested with 9.5.14)
+* [PostgREST](https://github.com/PostgREST/postgrest) 5.2+ (Tested with 5.2)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Create a `.env` file in the project root directory.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+REACT_APP_DB_URI=
+REACT_APP_AUTH_PROVIDER=
+PORT=
+```
 
-### `npm run build`
+```bash
+# Install dependencies
+$ npm install
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Start the app
+$ npm start
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+* [ISC License](https://opensource.org/licenses/ISC)
+* Copyright 2019 © [devilesk](https://github.com/devilesk/)
