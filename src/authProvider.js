@@ -12,7 +12,11 @@ export default (type, params) => {
         })
         return fetch(request)
             .then(response => {
-                if (response.status < 200 || response.status >= 300) {
+                if (response.status === 403) {
+                    window.location = '403.html';
+                    throw new Error(response.statusText);
+                }
+                else if (response.status < 200 || response.status >= 300) {
                     console.log('innerError', response.statusText);
                     window.location = '/auth/login';
                     throw new Error(response.statusText);
