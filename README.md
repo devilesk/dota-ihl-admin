@@ -3,7 +3,7 @@
     <br>
     dota-ihl-admin
 </h1>
-<h4 align="center">Admin dashboard for <a href="https://github.com/devilesk/dota-ihl-dota">dota-ihl-bot</a>.</h4>
+<h4 align="center">Admin dashboard for <a href="https://github.com/devilesk/dota-ihl-bot">dota-ihl-bot</a>.</h4>
 
 ## About
 
